@@ -188,7 +188,7 @@ export default function QuestionDetailPage({ params }) {
                       {new Date(reply.createdAt).toLocaleString()}
                     </span>
                   </div>
-                  <p className="text-muted-foreground">{reply.content}</p>
+                  <p className="text-gray-900">{reply.content}</p>
                 </div>
               ))
             ) : (
