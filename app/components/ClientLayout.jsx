@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
@@ -24,6 +25,9 @@ export default function ClientLayout({ children }) {
       {/* jodi home page e thake tahole header ashbe na */}
       {!isHomePage && <Header />}
 
+      {/* excluded paths na hoile sidebar ashbe */}
+      {shouldRenderSidebar && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />}
+
       <main
         className={`w-full transition-all duration-300 ${
           !isHomePage ? "pt-20" : ""
@@ -34,7 +38,7 @@ export default function ClientLayout({ children }) {
         }`}
       >
         <div className="flex items-start justify-center min-h-screen w-full">
-          <div className="w-full">{children}</div>
+          <div className="w-full bg-white">{children}</div>
         </div>
       </main>
     </>
