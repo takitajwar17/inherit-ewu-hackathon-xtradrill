@@ -38,11 +38,38 @@ const LearnPage = () => {
       console.error("Error fetching videos", error);
     }
   };
+ 
 
-  const handleSearch = (event) => {
-    event.preventDefault();
-    router.push(`/search?query=${searchTerm}`);
+  const fetchVideosBySearch = async () => {
+    try {
+      const promises = CHANNEL_IDS.map((channelId) =>
+        axios.get(`https://www.googleapis.com/youtube/v3/search`, {
+          params: {
+            part: "snippet",
+            channelId: channelId,
+            maxResults: 10,
+            order: "relevance",
+            q: searchTerm,
+            key: API_KEY,
+          },
+        })
+      );
+      const results = await Promise.all(promises);
+      const allVideos = results.flatMap((result) => result.data.items);
+      setVideos(allVideos);
+    } catch (error) {
+      console.error("Error fetching videos by search", error);
+    }
   };
+
+
+  useEffect(() => {
+    if (searchTerm) {
+      fetchVideosBySearch();
+    }
+  }, [searchTerm]);
+
+  
 
   return (
     <div>
@@ -54,7 +81,7 @@ const LearnPage = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button onClick={handleSearch}>Search</button>
+          <button onClick={fetchVideosBySearch}>Search</button>
         </div>
       </header>
       <main>
