@@ -31,7 +31,7 @@ const Playground = () => {
         Collaborative Coding Playground
       </h1>
 
-      <div className="flex flex-row items-center space-y-4">
+      <div className="flex flex-col items-center space-y-4">
         <button
           onClick={handleCreateRoom}
           className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
@@ -39,7 +39,7 @@ const Playground = () => {
           Create New Room
         </button>
 
-        <div className="flex flex-row items-center space-y-2">
+        <div className="flex flex-row items-center space-x-2">
           <input
             type="text"
             value={roomCode}
