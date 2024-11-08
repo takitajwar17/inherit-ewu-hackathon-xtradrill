@@ -63,11 +63,11 @@ const LearnPage = () => {
   };
 
 
-  useEffect(() => {
-    if (searchTerm) {
-      fetchVideosBySearch();
-    }
-  }, [searchTerm]);
+  // useEffect(() => {
+  //   if (searchTerm) {
+  //     fetchVideosBySearch();
+  //   }
+  // }, [searchTerm]);
 
   
 
