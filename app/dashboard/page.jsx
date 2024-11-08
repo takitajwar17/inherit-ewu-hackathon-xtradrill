@@ -17,7 +17,7 @@ const Dashboard = () => {
             <span>Playground</span>
           </a>
           <a
-            href="/devdiscuss"
+            href="/dev-discuss"
             className="flex flex-col items-center justify-between w-full p-4 border rounded bg-gray-200"
           >
             <RiDiscussLine size={40} />
