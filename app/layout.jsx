@@ -22,10 +22,8 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <head></head>
         <body className={kanit.className}>
-          {/* Retain ClientLayout to manage conditional Sidebar rendering */}
           <ClientLayout>
             <main>
-              {/* Keep the new background styling from the incoming changes */}
               <div className="flex items-start justify-center min-h-screen min-w-full">
                 <div className="w-full h-full">{children}</div>
               </div>
