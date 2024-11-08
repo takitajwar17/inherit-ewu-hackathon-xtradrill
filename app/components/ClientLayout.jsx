@@ -30,7 +30,7 @@ export default function ClientLayout({ children }) {
         } ${
           shouldRenderSidebar && isOpen && window.innerWidth >= 768
             ? "pl-56"
-            : "pl-8"
+            : ""
         }`}
       >
         <div className="flex items-start justify-center min-h-screen w-full">
