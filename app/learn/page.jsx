@@ -75,7 +75,64 @@ const LearnPage = () => {
           ))}
         </div>
       </main>
-     
+      <style jsx>{`
+        header {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          background-color: #f8f8f8;
+          border-bottom: 1px solid #ddd;
+        }
+        .search-bar {
+          display: flex;
+          width: 100%;
+          max-width: 600px;
+        }
+        .search-bar input {
+          flex: 1;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+          padding: 10px 20px;
+          font-size: 16px;
+          border: none;
+          border-radius: 0 4px 4px 0;
+          background-color: #007bff;
+          color: white;
+          cursor: pointer;
+        }
+        .video-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          justify-content: center;
+          padding: 20px;
+        }
+        .video-card {
+          width: 300px;
+          border: 1px solid #ccc;
+          padding: 16px;
+          border-radius: 8px;
+          transition: transform 0.2s;
+        }
+        .video-card:hover {
+          transform: scale(1.05);
+        }
+        .video-card img {
+          width: 100%;
+          border-radius: 8px;
+        }
+        .video-card a {
+          text-decoration: none;
+          color: inherit;
+        }
+        .video-card h3 {
+          margin: 8px 0;
+        }
+      `}</style>
     </div>
   );
 };
