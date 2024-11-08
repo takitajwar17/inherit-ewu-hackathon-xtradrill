@@ -3,6 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import { Editor } from "@monaco-editor/react";
 import LanguageSelector from "./LanguageSelector";
 import { CODE_SNIPPETS } from "@/app/constants";
+import { generateReview } from "@/lib/actions/question";
 import Output from "./Output";
 
 const CodeEditor = () => {
@@ -14,6 +15,11 @@ const CodeEditor = () => {
     editorRef.current = editor;
     editor.focus();
   };
+
+  const handleReview = () => {
+    console.log(value);
+    generateReview(value);
+  }
 
   const onSelect = (language) => {
     setLanguage(language);
@@ -51,7 +57,14 @@ const CodeEditor = () => {
   return (
     <div className="flex flex-col bg-white">
       <div className="h-3/5 p-4 bg-gray-200 shadow-md">
-        <LanguageSelector language={language} onSelect={onSelect} />
+        <LanguageSelector language={language} onSelect={onSelect} /> 
+        <button  
+        className="border-blue-600 border-2 text-blue-600 px-2 py-1 rounded hover:bg-blue-700 hover:text-white transition duration-200" 
+           onClick={handleReview}
+        >
+          
+           Code Review</button>
+     
         <Editor
           options={{
             minimap: {
@@ -64,7 +77,10 @@ const CodeEditor = () => {
           defaultValue={CODE_SNIPPETS[language]}
           onMount={onMount}
           value={value}
-          onChange={(value) => setValue(value)}
+          onChange={(newValue) => {
+            console.log(newValue);
+            setValue(newValue);
+          }}
         />
       </div>
       <Output editorRef={editorRef} language={language} />

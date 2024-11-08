@@ -1,13 +1,14 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import Header from "./Header";
+import { useState } from "react"; // Removed useEffect since it's not needed here
+import Header from "./Header"; // Import Header component
 import Sidebar from "./Sidebar";
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
+  // Normalize the pathname to handle trailing slashes
   const normalizedPath = pathname.replace(/\/+$/, "");
   const isHomePage = normalizedPath === "" || normalizedPath === "/";
 
@@ -18,14 +19,14 @@ export default function ClientLayout({ children }) {
 
   const shouldRenderSidebar = !isHomePage && !isExcludedPath;
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Manage isOpen state
 
   return (
     <>
-      {/* jodi home page e thake tahole header ashbe na */}
+      {/* Conditionally render Header */}
       {!isHomePage && <Header />}
 
-      {/* excluded paths na hoile sidebar ashbe */}
+      {/* Conditionally render Sidebar */}
       {shouldRenderSidebar && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />}
 
       <main
@@ -38,7 +39,7 @@ export default function ClientLayout({ children }) {
         }`}
       >
         <div className="flex items-start justify-center min-h-screen w-full">
-          <div className="w-full bg-white">{children}</div>
+          <div className="w-full">{children}</div>
         </div>
       </main>
     </>
