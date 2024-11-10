@@ -132,8 +132,8 @@ Our platform aims to:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-repo/inherit.git
-   cd inherit
+   git clone https://github.com/takitajwar17/inherit-ewu-hackathon-xtradrill.git
+   cd inherit-ewu-hackathon-xtradrill
    ```
 
 2. **Install Dependencies**
