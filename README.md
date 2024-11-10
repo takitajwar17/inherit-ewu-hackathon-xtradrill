@@ -69,6 +69,8 @@ Our platform aims to:
 
 - **Real-Time Collaboration**: A real-time collaborative IDE where multiple users can edit code simultaneously.
 - **Mentorship and Pair Programming**: Promotes mentoring and peer-to-peer learning.
+![Untitled design](https://github.com/user-attachments/assets/7b526025-6471-4afc-9a20-b28733038602)
+
 
 ### 3. Community Discussion Forum (**DevDiscuss**)
 
@@ -174,10 +176,6 @@ Our platform aims to:
 
    The application should now be running on `http://localhost:3000`.
 
-### Notes
-
-- **WebSockets**: For real-time collaborative features, ensure that WebSockets are properly configured in your local environment.
-- **API Limits**: The YouTube Data API has usage limits. If you encounter issues, check your quota or consider applying for higher limits.
 
 ## Usage Guide
 
@@ -228,8 +226,7 @@ Our platform aims to:
 - **Future Work**:
   - Fixing existing bugs and improving stability.
   - Enhancing AI features for better personalization.
-  - Expanding the resource library with more curated content.
   - Seeking partnerships with educational institutions and NGOs.
 
 
-Thank you for your interest in **Inherit**. Together, let's make quality education accessible to all and bridge the educational divide in Bangladesh.
+Thank you for your interest in **Inherit**.
