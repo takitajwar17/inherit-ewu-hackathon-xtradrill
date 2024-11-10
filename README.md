@@ -186,7 +186,7 @@ Our platform aims to:
   - MongoDB Atlas
   - YouTube Data API v3
   - Groq API (for Meta LLaMA3 70B LLM model)
-  - Piston API (no key required but may need setup)
+  - Piston API
 
 ### Steps
 
