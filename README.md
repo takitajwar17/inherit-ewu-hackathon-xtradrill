@@ -1,36 +1,235 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inherit: A Unified Learning & Coding Platform
 
-## Getting Started
+### Update
 
-First, run the development server:
+Our team, XtraDrill, consisting of Ahabab Imtiaz Risat, Tasnim Ashraf, and Taki Tajwaruzzaman Khan, achieved the 1st Runner-Up position out of 178 participating teams at the Programming Hero presents National Hackathon at EWU National RoboFest 2024. Our project, Inherit, is an integrated online platform designed to bridge the skills gap in Bangladesh's IT sector and reduce educational inequalities between urban and rural areas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![465783574_961343152706945_3517815958968839725_n](https://github.com/user-attachments/assets/5cfde8c2-2d5a-4fb2-b1d5-09fa98d944c2)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Problem Statement
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Bangladesh faces significant challenges in its IT sector and education system:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Skills Gap in IT Sector**: There is an annual demand for approximately 7,500–8,000 technical professionals, but a shortage of qualified candidates. Alarmingly, around **80% of computer science and engineering graduates struggle with basic coding skill tests**, highlighting deficiencies in their education.
 
-## Learn More
+- **Educational Inequality**: A stark disparity exists between urban and rural education:
+  - Only **34% of university students come from rural areas**, even though nearly 70% of school-age children reside there.
+  - **80% of school dropouts originate from rural backgrounds**.
+  - **81% of rural children do not acquire basic numeracy skills**.
 
-To learn more about Next.js, take a look at the following resources:
+These statistics indicate systemic barriers that prevent rural students from accessing quality education and pursuing further studies, contributing to increased inequalities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Sources:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Assessing Skill Gaps and Exploring Employment Opportunities in Bangladesh’s ICT Sector](https://www.inspiraac.com)
+- [How to bridge the rural-urban education divide in Bangladesh | The Daily Star](https://www.thedailystar.net)
+- [Growing rural-urban education divide is hurting Bangladesh's future](https://www.example.com)
 
-## Deploy on Vercel
+## Solution Overview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Inherit** is an integrated online platform focused on:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **SDG 4: Quality Education**
+- **SDG 10: Reduced Inequalities**
+![image](https://github.com/user-attachments/assets/d1c9f193-7121-45f1-9ec4-16bca5a0eb98)
+
+Our platform aims to:
+
+- **Enhance Coding Proficiency**: Equip users with the necessary skills to meet industry demands.
+- **Reduce Educational Inequality**: Provide equal access to quality education resources for rural and urban students alike.
+- **Promote Collaborative Learning**: Foster a supportive community that encourages mentorship and peer-to-peer learning.
+- **Leverage AI for Personalized Education**: Utilize AI to offer tailored support and accelerate learning outcomes.
+
+## Platform Features
+
+### 1. Interactive Learning Environment
+
+#### **Learn Page**
+
+- **Random Video Tutorials & Search Functionality**: Utilizes YouTube Data API to provide a curated list of coding-related tutorials, minimizing distractions from unrelated content.
+![image](https://github.com/user-attachments/assets/15dcae0c-4477-4654-b348-83aa2912c1ba)
+
+
+#### **Video Page**
+
+- **Embedded YouTube Videos**: Features embedded videos alongside an online code editor.
+- **Online Code Editor**: Allows users to practice coding in real-time.
+- **Note-Saving Feature**: Users can take and save notes for an interactive learning experience.
+![image](https://github.com/user-attachments/assets/ba494034-36e7-4930-968a-c74d869b1e81)
+
+### 2. Real-Time Collaborative IDE
+
+#### **Playground Page**
+
+- **Session Management**: Users can create, save, and manage collaborative coding sessions.
+- ![image](https://github.com/user-attachments/assets/041a2b5b-d1fd-442b-9a3f-005815a9aaa2)
+
+
+#### **Live Playground**
+
+- **Real-Time Collaboration**: A real-time collaborative IDE where multiple users can edit code simultaneously.
+- **Mentorship and Pair Programming**: Promotes mentoring and peer-to-peer learning.
+
+### 3. Community Discussion Forum (**DevDiscuss**)
+
+- **Discussion Forum**: A community-driven Q&A section where users can ask questions and receive answers from peers, similar to Stack Overflow.
+  ![image](https://github.com/user-attachments/assets/a4c41165-e9fd-405a-83d8-f6c179b2364f)
+
+- **AI Assistance**: Provides automatic AI-generated answers with disclaimers, offering immediate support while encouraging community engagement.
+    ![image](https://github.com/user-attachments/assets/fa4aa8dd-e810-4d9a-8117-fd786ec26561)
+  ![image](https://github.com/user-attachments/assets/8c34617c-66b4-4b34-b47b-e8707df25dea)
+
+### 4. AI Integration
+
+#### **AI-Powered Code Review**
+
+- **Code Evaluation**: Offers evaluations of current code, suggests better approaches, and enhances coding practices.
+- **Availability**: Integrated within the code editor on both the Video Page and Playground.
+
+#### **AI-Generated Forum Responses**
+
+- **Instant Answers**: In DevDiscuss, AI provides instant answers to user questions.
+- **Disclaimers**: Responses are clearly marked to indicate they are AI-generated.
+
+## Technology Stack
+
+- **Frontend**:
+  - [Next.js](https://nextjs.org/) - React framework for server-side rendering.
+  - [shadcn](https://ui.shadcn.com/) - For interactive UI components.
+  - [Monaco Editor](https://microsoft.github.io/monaco-editor/) - Code editor component.
+
+- **Backend**:
+  - [Express.js](https://expressjs.com/) - Web application framework for Node.js.
+
+- **APIs and Services**:
+  - **YouTube Data API v3** - Fetches curated coding tutorials.
+  - **Piston API** - Executes code snippets in various programming languages.
+  - **Groq API** - Integrates Meta LLaMA3 70B LLM model for AI features.
+  - **Clerk** - User authentication and management.
+
+- **Database**:
+  - **MongoDB Atlas** - Cloud-based NoSQL database.
+
+- **Real-Time Communication**:
+  - **WebSockets** - Enables real-time collaborative coding (Note: Limited in live deployment due to hosting constraints).
+
+## Installation and Setup
+
+### Prerequisites
+
+- **Node.js** and **npm** installed on your machine.
+- **API Keys** for the following services:
+  - Clerk
+  - MongoDB Atlas
+  - YouTube Data API v3
+  - Groq API (for Meta LLaMA3 70B LLM model)
+  - Piston API (no key required but may need setup)
+
+### Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-repo/inherit.git
+   cd inherit
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set Up Environment Variables**
+
+   Create a `.env` file in the root directory and fill it with the following variables:
+
+   ```env
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
+   CLERK_SECRET_KEY=your_clerk_secret_key
+
+   WEBHOOK_SECRET=your_webhook_secret
+
+   MONGODB_URI=your_mongodb_uri
+
+   GROQ_API_KEY=your_groq_api_key
+   NEXT_PUBLIC_YOUTUBE_API_KEY=your_youtube_api_key
+
+   NEXT_PUBLIC_SOCKET_SERVER_URL=http://localhost:3000
+   NEXT_PUBLIC_FRONTEND_URL=http://localhost:3000
+   ```
+
+   Replace `your_*` with your actual API keys and URIs.
+
+4. **Run the Development Server**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application should now be running on `http://localhost:3000`.
+
+### Notes
+
+- **WebSockets**: For real-time collaborative features, ensure that WebSockets are properly configured in your local environment.
+- **API Limits**: The YouTube Data API has usage limits. If you encounter issues, check your quota or consider applying for higher limits.
+
+## Usage Guide
+
+### Accessing the Platform
+
+1. **Sign Up / Sign In**
+
+   - Navigate to `/sign-up` to create a new account or `/sign-in` to log in.
+   - Authentication is managed by Clerk.
+
+2. **Learn Page**
+
+   - Access a curated list of coding tutorials.
+   - Use the search functionality to find specific topics.
+
+3. **Video Page**
+
+   - Watch embedded YouTube tutorials.
+   - Practice coding in the adjacent code editor.
+   - Save notes for future reference.
+
+4. **Playground**
+
+   - Create new coding sessions.
+   - Collaborate in real-time with other users.
+   - Save and manage your sessions.
+
+5. **DevDiscuss**
+
+   - Ask questions or share knowledge in the community forum.
+   - Receive answers from peers or AI-generated responses.
+
+6. **AI Features**
+
+   - Utilize AI-powered code review within the code editor.
+   - Get instant AI-generated answers in the discussion forum.
+
+
+## Additional Notes
+
+- **Live Deployment**: The platform is live at [https://inherit-ewu-hackathon-xtra-drill.vercel.app](https://inherit-ewu-hackathon-xtra-drill.vercel.app).
+  - **Limitations**:
+    - The **socket part doesn't work** in the live link as Vercel doesn't support WebSocket connections.
+    - The **YouTube API** has a limited number of free usage per day.
+    - The website has some bugs; we are actively working on fixing them.
+  - **Recommendation**: It is recommended to run the project locally with your own API keys for full functionality.
+
+- **Future Work**:
+  - Fixing existing bugs and improving stability.
+  - Enhancing AI features for better personalization.
+  - Expanding the resource library with more curated content.
+  - Seeking partnerships with educational institutions and NGOs.
+
+
+Thank you for your interest in **Inherit**. Together, let's make quality education accessible to all and bridge the educational divide in Bangladesh.
