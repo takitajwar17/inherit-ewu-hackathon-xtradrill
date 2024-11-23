@@ -64,9 +64,9 @@ These statistics indicate systemic barriers that prevent rural students from acc
 
 **Sources:**
 
-- [Assessing Skill Gaps and Exploring Employment Opportunities in Bangladesh’s ICT Sector](https://www.inspiraac.com)
-- [How to bridge the rural-urban education divide in Bangladesh | The Daily Star](https://www.thedailystar.net)
-- [Growing rural-urban education divide is hurting Bangladesh's future](https://www.example.com)
+- [Assessing Skill Gaps and Exploring Employment Opportunities in Bangladesh’s ICT Sector](https://inspira-bd.com/case-studies/addressing-skill-gaps-and-employment-opportunities/)
+- [How to bridge the rural-urban education divide in Bangladesh | The Daily Star](https://www.thedailystar.net/opinion/views/news/how-bridge-the-rural-urban-education-divide-bangladesh-3621516)
+- [Growing rural-urban education divide is hurting Bangladesh's future]([https://www.example.com](https://www.thedailystar.net/opinion/views/news/growing-rural-urban-education-divide-hurting-bangladeshs-future-3580771))
 
 ---
 
